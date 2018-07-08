@@ -7,9 +7,9 @@ import { User } from './user';
 
 export class UserFilter implements PipeTransform
 {
-    transform(value:User[],filterByName:string):User[] {
+    transform(value:any[],filterByName:string):any[] {
         filterByName=filterByName?filterByName.toLowerCase():null
-        return filterByName?value.filter((developers:User)=>developers.name.toLowerCase().indexOf(filterByName)!== -1):value
+        return filterByName?value.filter((developers:any)=>developers.name.toLowerCase().indexOf(filterByName)!== -1):value
     }
     
 }

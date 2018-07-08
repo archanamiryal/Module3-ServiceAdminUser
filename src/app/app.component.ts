@@ -18,6 +18,10 @@ export class AppComponent implements OnInit{
     this.developers=this._userServiceObj.getData();
     
   }
+  doChangeColors(event)
+  {
+    console.log(event);
+  }
 }
 
 
